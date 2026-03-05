@@ -35,7 +35,7 @@ export const projects: Project[] = [
     name: "Portfolio Website (Next.js)",
     description:
       "A modern personal portfolio website built with Next.js, TypeScript, and Tailwind CSS featuring static data and responsive design.",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "React", "Framer Motion"],
     githubLink: "https://github.com/umar-dim/portfolio-nextjs",
     liveLink: "https://umarahmedkhan.vercel.app/",
     dateCompleted: "March 2025",

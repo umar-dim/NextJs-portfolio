@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Umar Khan - Software Developer Portfolio
+
+A modern, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS to showcase projects, skills, and professional experience.
+
+## Live Demo
+
+🔗 **Live Site**: [umarahmedkhan.vercel.app](https://umarahmedkhan.vercel.app/)
+
+## Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org)
+- **Language**: [TypeScript](https://www.typescriptlang.org)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev)
+- **Runtime**: React 19
+
+## Features
+
+- **Home/About** - Personal introduction and overview
+- **Projects** - Showcase of 12+ projects with descriptions, technologies, and links
+- **Experience** - Professional work history and academic roles
+- **Skills** - Categorized skills (Languages, Frameworks, Developer Tools)
+- **Resume** - Downloadable resume with PDF export
+- **Contact** - Contact information and links
+- **Responsive Design** - Fully optimized for all screen sizes
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone the repository
+git clone https://github.com/umar-dim/portfolio-nextjs.git
+
+# Navigate to project directory
+cd portfolio-nextjs
+
+# Install dependencies
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Start development server
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+### Build for Production
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Create production build
+npm run build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Start production server
+npm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+```
+├── app/
+│   ├── components/       # Reusable React components
+│   ├── data/             # Static data (projects, skills, experience)
+│   ├── experiences/      # Experience detail pages
+│   ├── projects/         # Project detail pages
+│   ├── resume/           # Resume page
+│   ├── page.tsx          # Home page
+│   └── layout.tsx        # Root layout
+├── public/               # Static assets
+├── package.json          # Dependencies
+└── next.config.ts        # Next.js configuration
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Customization
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To customize the portfolio content, edit the files in `app/data/`:
+
+- `app/data/projects.ts` - Add or modify projects
+- `app/data/experiences.ts` - Add or modify experience entries
+- `app/data/skills.ts` - Update skills and proficiency levels
+
+## License
+
+MIT License - Created by Umar Khan
