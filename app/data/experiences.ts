@@ -21,7 +21,7 @@ export const experiences: Experience[] = [
     description:
       "Full-stack development on a healthcare network platform using React, Node.js, Sequelize, and PostgreSQL.",
     company: "Ingenio Care Inc.",
-    companyImg: "/uic.png",
+    companyImg: "/ingenio.png",
     responsibilities: [
       "Contributed to full-stack development using React, Node.js, Sequelize, and PostgreSQL on a healthcare network platform",
       "Reduced bug rates by 30% through extensive testing and debugging cycles",
