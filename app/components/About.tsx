@@ -93,7 +93,8 @@ const About = () => {
             className="mt-4 text-lg text-neutral-600 dark:text-neutral-400"
           >
             I&apos;m an aspiring software developer with experience in web development,
-            programming, and problem-solving.
+            programming, and problem-solving. I have a passion for learning new technologies and building projects that
+            make a positive impact. I am currently seeking opportunities to grow my skills and contribute to meaningful projects and roles.
           </motion.p>
         </div>
       </motion.div>
