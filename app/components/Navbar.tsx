@@ -14,7 +14,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="relative bg-white shadow dark:bg-neutral-800">
+    <nav className="sticky top-0 z-50 relative bg-white shadow dark:bg-neutral-800">
       <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-2xl font-bold my-2 text-neutral-700 dark:text-neutral-200">
@@ -22,7 +22,7 @@ const Navbar = () => {
             Portfolio
           </Link>
 
-          <div className="flex lg:hidden">
+          <div className="flex md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
@@ -65,9 +65,8 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`absolute inset-x-0 z-20 w-3/5 h-screen mt-4 px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-neutral-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:h-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
-            isOpen ? "translate-x-0 opacity-100" : "opacity-0 -translate-x-full"
-          }`}
+          className={`absolute inset-x-0 z-30 w-3/5 h-screen mt-4 px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-neutral-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:h-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${isOpen ? "translate-x-0 opacity-100" : "opacity-0 -translate-x-full"
+            }`}
         >
           <div className="flex flex-col md:flex-row md:mx-6">
             {navItems.map((item, index) => (
