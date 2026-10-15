@@ -31,6 +31,36 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "sunnah-lens",
+    name: "Sunnah Lens",
+    description:
+      "A meaning-based hadith search engine over the six canonical collections (29,653 hadith), with semantic search, a browsable directory, and an AI chat grounded in cited sources.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "FastAPI",
+      "Python",
+      "PostgreSQL",
+      "pgvector",
+      "Gemini",
+    ],
+    githubLink: "https://github.com/umar-dim/Sunnah-Lens",
+    liveLink: "https://sunnah-lens.vercel.app",
+    dateCompleted: "October 2026",
+    motivation:
+      "Built so everyday Muslims can find what the Prophet ﷺ said about a topic by describing it in plain words, without needing book names, hadith numbers, or Arabic search terms.",
+    learnings: [
+      "Built semantic search with Gemini embeddings and pgvector HNSW indexes in Postgres",
+      "Implemented a RAG chat that streams answers citing only the retrieved hadith",
+      "Added stemmed English keyword search with relevance ranking and pagination",
+      "Used pgvector iterative index scans to keep filtered vector search accurate",
+      "Rendered Arabic text as first-class content with correct RTL layout and typography",
+    ],
+    icon: Search,
+  },
+  {
     id: "portfolio-nextjs",
     name: "Portfolio Website (Next.js)",
     description:
