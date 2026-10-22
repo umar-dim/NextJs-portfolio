@@ -22,7 +22,7 @@ This file is the source of truth for how the portfolio looks and moves. When a c
 
 ## 2. Colour
 
-Neutral base (the current look) with a single bold accent. Define everything as tokens — no raw `gray-800` / `neutral-600` scattered through components.
+Warm cream base in light mode, near-black in dark mode, with a single bold accent. Define everything as tokens — no raw `gray-800` / `neutral-600` scattered through components.
 
 ### Tokens
 
@@ -33,10 +33,10 @@ Add to `app/globals.css`:
   --font-sans: var(--font-funnel), ui-sans-serif, system-ui, sans-serif;
 
   /* Surfaces */
-  --color-bg: #fafafa;
-  --color-surface: #ffffff;
-  --color-surface-muted: #f4f4f5;
-  --color-border: #e4e4e7;
+  --color-bg: #f7f1e3;        /* cream */
+  --color-surface: #fffcf5;   /* warm off-white */
+  --color-surface-muted: #f3ecdc;
+  --color-border: #e7dcc5;
 
   /* Text */
   --color-ink: #0a0a0a;        /* headings */
@@ -74,7 +74,7 @@ Tailwind v4 turns these into utilities automatically: `bg-surface`, `text-ink`, 
 - **Accent is for emphasis only:** the name in the hero, primary buttons, active nav link, focus rings, timeline dots. If more than ~5% of a screen is accent, it's too much.
 - **Headings** → `text-ink`. **Paragraphs** → `text-copy`. **Meta** (dates, company, captions) → `text-muted`.
 - **Cards** → `bg-surface` + `border border-border`. Shadows are secondary (see §5).
-- **Skill proficiency colours** (red / yellow / blue / green gradients) stay as-is — they encode data. Move the map to one place: `SkillBadge.tsx` already has it; `Skills.tsx` duplicates it and should import from there.
+- **Skill proficiency colours** (red / amber / blue / green) encode data. Light mode uses soft 100→200 tints so chips don't overpower the cream background. Move the map to one place: `SkillBadge.tsx` already has it; `Skills.tsx` duplicates it and should import from there.
 - **Brand icon colours** (LinkedIn blue, Gmail red) stay.
 
 ### Background

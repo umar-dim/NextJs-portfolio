@@ -1,26 +1,31 @@
 @import "tailwindcss";
 
 @theme {
+  /* Warm off-white: every bg-white surface (cards, navbar) reads as cream */
+  --color-white: #fffcf5;
+
   --font-sans: var(--font-funnel), ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f7f1e3;
+  --foreground: #1c1917;
+  --dot: rgba(120, 100, 70, 0.3);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --dot: rgba(107, 114, 128, 0.5);
   }
 }
 
 html,
 body {
   background-color: var(--background);
-  background-image: radial-gradient(circle, rgba(107, 114, 128, 0.5) 1px, transparent 1px);
+  background-image: radial-gradient(circle, var(--dot) 1px, transparent 1px);
   background-size: 30px 30px;
   background-position: 0 0;
   color: var(--foreground);

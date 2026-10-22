@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { skills } from "../data/skills";
+import { proficiencyColors } from "./SkillBadge";
 
 const container = {
   hidden: { opacity: 0 },
@@ -25,13 +26,6 @@ const SkillsCard = ({
   skillType: string;
   skills: { skill: string; proficiency: string }[];
 }) => {
-  const proficiencyColors: Record<string, string> = {
-    Beginner: "from-red-200 to-red-400 text-red-800 dark:from-red-900/50 dark:to-red-800/50 dark:text-red-200",
-    Intermediate: "from-yellow-200 to-yellow-400 text-yellow-800 dark:from-yellow-900/50 dark:to-yellow-800/50 dark:text-yellow-200",
-    Advanced: "from-blue-200 to-blue-400 text-blue-800 dark:from-blue-900/50 dark:to-blue-800/50 dark:text-blue-200",
-    Expert: "from-green-200 to-green-400 text-green-800 dark:from-green-900/50 dark:to-green-800/50 dark:text-green-200",
-  };
-
   return (
     <motion.div
       variants={item}
