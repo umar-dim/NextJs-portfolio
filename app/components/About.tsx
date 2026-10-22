@@ -2,9 +2,8 @@
 
 import { motion } from "framer-motion";
 
-const welcomeWords = ["Welcome", "to"];
-const nameWord = ["Umar", "Khan's"];
-const portfolioWord = ["Portfolio"];
+const welcomeWords = ["I", "build", "full-stack", "apps,"];
+const nameWord = ["with", "AI", "inside."];
 
 const container = {
   hidden: { opacity: 0 },
@@ -54,6 +53,15 @@ const About = () => {
         </motion.div>
 
         <div className="md:flex-3 flex flex-col md:justify-center min-h-0 container px-6 py-4 mx-auto">
+          <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="mb-3 text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400"
+          >
+            Umar Khan · Software Developer · Chicago
+          </motion.p>
           <motion.h1
             variants={container}
             initial="hidden"
@@ -77,11 +85,6 @@ const About = () => {
             {/*   variants={wordVariant} */}
             {/*   className="inline-block bg-gradient-to-r from-neutral-700 to-neutral-900 dark:from-white dark:to-neutral-300 bg-clip-text text-transparent" */}
             {/* > */}
-            {portfolioWord.map((word, i) => (
-              <motion.span key={`portfolio-${i}`} variants={wordVariant} className="inline-block">
-                {word}
-              </motion.span>
-            ))}
             {/* </motion.span> */}
           </motion.h1>
 
@@ -92,9 +95,10 @@ const About = () => {
             transition={{ delay: 0.8, duration: 0.5 }}
             className="mt-4 text-lg text-neutral-600 dark:text-neutral-400"
           >
-            I&apos;m an aspiring software developer with experience in web development,
-            programming, and problem-solving. I have a passion for learning new technologies and building projects that
-            make a positive impact. I am currently seeking opportunities to grow my skills and contribute to meaningful projects and roles.
+            I take products from database to deployed UI, and wire AI into the middle. Most recently I built
+            Sunnah Lens, a semantic search engine over 29,653 hadith with an AI chat that answers only from the
+            sources it retrieves. At Ingenio Care I ship full-stack features in React, Node and PostgreSQL.
+            I&apos;m looking for a junior or new-grad role where I can keep building end to end, on a team.
           </motion.p>
         </div>
       </motion.div>

@@ -34,17 +34,17 @@ export const projects: Project[] = [
     id: "sunnah-lens",
     name: "Sunnah Lens",
     description:
-      "A meaning-based hadith search engine over the six canonical collections (29,653 hadith), with semantic search, a browsable directory, and an AI chat grounded in cited sources.",
+      "Describe a topic in plain English and get the matching hadith from 29,653 narrations. Gemini embeddings power meaning-based search, and an AI chat answers citing only the hadith it retrieved.",
     technologies: [
       "Next.js",
+      "FastAPI",
+      "pgvector",
+      "Gemini",
+      "PostgreSQL",
       "React",
       "TypeScript",
       "Tailwind CSS",
-      "FastAPI",
       "Python",
-      "PostgreSQL",
-      "pgvector",
-      "Gemini",
     ],
     githubLink: "https://github.com/umar-dim/Sunnah-Lens",
     liveLink: "https://sunnah-lens.vercel.app",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     id: "llm-pipeline",
     name: "LLM Pipeline",
     description:
-      "An end-to-end distributed training pipeline for Large Language Models (LLMs) using Scala, Apache Spark, and AWS EMR.",
+      "A distributed training pipeline for language models on AWS EMR, covering tokenization, embeddings, and transformer training at scale.",
     technologies: [
       "Scala",
       "Apache Spark",
@@ -109,13 +109,13 @@ export const projects: Project[] = [
     id: "evently",
     name: "Evently",
     description:
-      "A modern event management system for UIC campus events with QR code check-in functionality.",
+      "A UIC campus events platform with live event scraping, Google sign-in, an admin dashboard, and camera-based QR check-in.",
     technologies: [
       "React",
-      "Tailwind CSS",
       "Express.js",
       "MongoDB",
       "TypeScript",
+      "Tailwind CSS",
       "JavaScript",
     ],
     githubLink: "https://github.com/umar-dim/EVENTLY",

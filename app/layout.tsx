@@ -10,23 +10,23 @@ const funnel = Funnel_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Umar's Portfolio - Aspiring Software Developer",
+  title: "Umar Khan · Full-Stack Developer Building with AI",
   description:
-    "Explore the portfolio of Umar, an aspiring software developer with experience in web development, programming, and problem-solving.",
+    "Umar Khan builds full-stack web apps end to end with AI inside: Next.js, FastAPI, PostgreSQL, and LLM-powered search and chat.",
   keywords:
-    "Umar Khan, portfolio, aspiring software developer, web development, React, Node.js, programming, software engineering",
+    "Umar Khan, portfolio, full-stack developer, AI, new grad software engineer, web development, React, Node.js, programming, software engineering",
   authors: [{ name: "Umar Khan" }],
   openGraph: {
-    title: "Umar's Portfolio - Aspiring Software Developer",
+    title: "Umar Khan · Full-Stack Developer Building with AI",
     description:
-      "Explore the portfolio of Umar, an aspiring software developer with experience in web development, programming, and problem-solving.",
+      "Umar Khan builds full-stack web apps end to end with AI inside: Next.js, FastAPI, PostgreSQL, and LLM-powered search and chat.",
     type: "website",
     images: ["/card.jpg"],
   },
   twitter: {
-    title: "Umar's Portfolio - Aspiring Software Developer",
+    title: "Umar Khan · Full-Stack Developer Building with AI",
     description:
-      "Explore the portfolio of Umar, an aspiring software developer with experience in web development, programming, and problem-solving.",
+      "Umar Khan builds full-stack web apps end to end with AI inside: Next.js, FastAPI, PostgreSQL, and LLM-powered search and chat.",
     images: ["/card.jpg"],
   },
   robots: {
