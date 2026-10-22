@@ -14,25 +14,45 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    id: "ingenio-care",
-    date: "January 2025 - Current",
+    id: "ingenio-care-engineer",
+    date: "September 2025 - Present",
     category: "Work",
-    title: "Software Development Intern",
+    title: "Full-Stack Software Engineer",
     description:
-      "Full-stack development on a healthcare network platform using React, Node.js, Sequelize, and PostgreSQL.",
+      "Own 5 provider-facing feature areas end to end on a multi-tenant healthcare platform handling PHI, from patient management and scheduling to billing, claims, and AI-assisted clinical workflows.",
     company: "Ingenio Care Inc.",
     companyImg: "/ingenio.png",
     responsibilities: [
-      "Contributed to full-stack development using React, Node.js, Sequelize, and PostgreSQL on a healthcare network platform",
-      "Reduced bug rates by 30% through extensive testing and debugging cycles",
-      "Engineered scalable features and optimized backend services",
-      "Resolved over 15 technical issues under tight deadlines",
-      "Participated in agile practices and cross-functional collaboration",
+      "Own 5 provider-facing feature areas end to end, including patient management, clinical workflows, scheduling, billing, and claims, in a multi-tenant healthcare platform handling PHI",
+      "Designed role-based access control and multi-tenant authorization with JWT, enforcing per-tenant data isolation and API-level permissions across provider organizations",
+      "Integrated telehealth video, payments, messaging, and AI-assisted clinical workflows via third-party APIs (EHR, Amazon Chime, Stripe, OpenAI)",
+      "Strengthened CI/CD reliability by adding automated health checks and environment validation to GitHub Actions, catching issues before they reached production",
     ],
     achievements: [
-      "Reduced bug rates by 30% through extensive testing and debugging",
-      "Improved system responsiveness and reliability",
-      "Resolved 15+ technical issues in a fast-paced startup environment",
+      "Owns 5 provider-facing feature areas end to end",
+      "Shipped per-tenant data isolation and API-level permissions across provider organizations",
+      "Added automated health checks and environment validation to the CI/CD pipeline",
+    ],
+    technologies: ["JWT", "OpenAI API", "Stripe", "Amazon Chime", "GitHub Actions"],
+    learnings: [],
+  },
+  {
+    id: "ingenio-care",
+    date: "January 2025 - September 2025",
+    category: "Work",
+    title: "Software Development Intern",
+    description:
+      "Built and shipped full-stack features on a healthcare network platform, from database schema through UI, using React, Node.js, Sequelize, and PostgreSQL.",
+    company: "Ingenio Care Inc.",
+    companyImg: "/ingenio.png",
+    responsibilities: [
+      "Built and shipped full-stack features on a healthcare network platform, from database schema through UI",
+      "Cut bug rates 30% by expanding test coverage and tightening debugging cycles, catching regressions before they reached production",
+      "Optimized backend services and query performance, improving system responsiveness as the platform's data and user load grew",
+    ],
+    achievements: [
+      "Cut bug rates by 30% through expanded test coverage",
+      "Improved system responsiveness as data and user load grew",
     ],
     technologies: ["React", "Node.js", "Sequelize", "PostgreSQL", "TypeScript"],
     learnings: [

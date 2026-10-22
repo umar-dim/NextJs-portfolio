@@ -42,13 +42,16 @@ export const skills: SkillCategory[] = [
       { skill: "Apache Spark", proficiency: "Intermediate" },
       { skill: "Hadoop MapReduce", proficiency: "Intermediate" },
       { skill: "DeepLearning4J", proficiency: "Intermediate" },
+      { skill: "OpenAI API", proficiency: "Intermediate" },
     ],
   },
   {
     skillType: "Developer Tools",
     skills: [
       { skill: "Android Studio", proficiency: "Intermediate" },
+      { skill: "AWS", proficiency: "Intermediate" },
       { skill: "Docker", proficiency: "Intermediate" },
+      { skill: "GitHub Actions", proficiency: "Intermediate" },
       { skill: "Git", proficiency: "Advanced" },
       { skill: "GitHub", proficiency: "Advanced" },
       { skill: "VS Code", proficiency: "Expert" },

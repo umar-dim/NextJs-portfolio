@@ -25,6 +25,8 @@ const ResumeContent = () => {
           Umar Khan
         </h1>
         <div className="flex flex-wrap justify-center gap-3 text-sm text-gray-600 dark:text-neutral-400">
+          <span>Open to relocation</span>
+          <span>|</span>
           <span>224-666-7151</span>
           <span>|</span>
           <Link

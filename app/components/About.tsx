@@ -60,7 +60,7 @@ const About = () => {
             transition={{ duration: 0.5 }}
             className="mb-3 text-sm font-semibold uppercase tracking-wider text-neutral-500 dark:text-neutral-400"
           >
-            Umar Khan · Software Developer · Chicago
+            Umar Khan · Full-Stack Software Engineer · Chicago
           </motion.p>
           <motion.h1
             variants={container}
@@ -97,8 +97,9 @@ const About = () => {
           >
             I take products from database to deployed UI, and wire AI into the middle. Most recently I built
             Sunnah Lens, a semantic search engine over 29,653 hadith with an AI chat that answers only from the
-            sources it retrieves. At Ingenio Care I ship full-stack features in React, Node and PostgreSQL.
-            I&apos;m looking for a junior or new-grad role where I can keep building end to end, on a team.
+            sources it retrieves. As a Full-Stack Software Engineer at Ingenio Care, I own five provider-facing feature areas on a
+            multi-tenant healthcare platform, from scheduling and billing to AI-assisted clinical workflows.
+            I&apos;m open to new full-stack roles and to relocating.
           </motion.p>
         </div>
       </motion.div>
