@@ -10,6 +10,7 @@ const funnel = Funnel_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://umarahmedkhan.vercel.app"),
   title: "Umar Khan · Full-Stack Developer Building with AI",
   description:
     "Umar Khan builds full-stack web apps end to end with AI inside: Next.js, FastAPI, PostgreSQL, and LLM-powered search and chat.",
